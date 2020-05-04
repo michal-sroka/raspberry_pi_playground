@@ -1,0 +1,3 @@
+numpy
+pandas
+w1thermsensor
