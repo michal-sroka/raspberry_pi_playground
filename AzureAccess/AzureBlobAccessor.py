@@ -25,6 +25,8 @@ class AzureBlobAccessor:
             print(f"Container cannot be created due to: {ex}")
 
     def write_sensor_measurement(self, sensor_name: str, measurement: str):
+        """ TODO: doc
+        """
         # Create a blob client using the local file name as the name for the blob
         blob_client = self._blob_service_client.get_blob_client(
             container=self._blob_container_name,

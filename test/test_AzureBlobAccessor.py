@@ -1,6 +1,11 @@
 
-from AzureAccess.AzureBlobAccessor import AzureBlobAccessor
+import sys
 import os, uuid
+
+sys.path.append('c:\\dev\\projects\\raspberry_pi_playground')
+
+
+from AzureAccess.AzureBlobAccessor import AzureBlobAccessor
 
 
 connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
